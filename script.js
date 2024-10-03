@@ -30,3 +30,23 @@ function ola(nome){
 }
 
 ola("gabriel")
+
+// Arrow function
+
+const hello = () => (console.log("função arrow function"))
+
+hello()
+
+// Array, objeto e metodos
+
+let jogadores = [
+    {nome: "Huguinho", idade: 17},
+    {nome: "Zezinho", idade: 18},
+    {nome: "Luizinho", idade: 19}
+]
+
+let listarJogadores = jogadores.map(function(item){
+    return item.idade;
+})
+
+console.log(listarJogadores)
